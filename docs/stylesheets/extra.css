@@ -1,0 +1,11 @@
+/* DUNE brand accent, taken from dune_plot_style's SetDUNELogoColors()
+   (github.com/DUNE/dune_plot_style) — the subset of Okabe-Ito colors that
+   overlaps the DUNE logo palette. #D55E00 (vermillion) is the closest match
+   to "DUNE orange"; #E69F00 (amber) used as the secondary accent. Adjust
+   here if there's an official brand guide hex that supersedes this. */
+:root {
+  --md-primary-fg-color: #D55E00;
+  --md-primary-fg-color--light: #E08640;
+  --md-primary-fg-color--dark: #A04700;
+  --md-accent-fg-color: #E69F00;
+}

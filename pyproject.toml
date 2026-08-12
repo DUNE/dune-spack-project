@@ -1,0 +1,8 @@
+[project]
+name = "dune-spack-project"
+version = "0.1.0"
+description = "Documentation, training, and issue tracking for DUNE Spack development and use"
+requires-python = ">=3.10"
+dependencies = [
+    "zensical",
+]
