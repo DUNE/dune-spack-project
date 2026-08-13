@@ -90,8 +90,21 @@ views:
 - **DUNE Repos** — table view, DUNE-org repos only
 - **DUNE Kanban** — board view, grouped by status
 
-To report a problem, open an issue in the relevant repo above and it will
-show up on the board.
+### Reporting a problem
+
+1. Open the issue in whichever of the five tracked repos it actually belongs
+   to — `dune-spack-config`, `dune-spack-envs`, `dune_spack`,
+   `dune-release-configs`, or [FNALssi/spack-mpd](https://github.com/FNALssi/spack-mpd) —
+   **not** in this docs repo, which isn't one of the tracked repos.
+2. Check the [board](https://github.com/orgs/DUNE/projects/37) a minute or
+   two later. Most new issues get added automatically, but this isn't
+   guaranteed for every repo. If yours hasn't shown up:
+   - On the issue page, open the **Projects** panel in the right sidebar and
+     select **DUNE Spack & MPD Issues**, or
+   - From the command line: `gh issue edit <issue-url> --add-project "DUNE Spack & MPD Issues"`.
+
+Opening the issue in the right repo is what makes it *visible* to the board;
+adding it to the project is the separate step that actually puts it there.
 
 ## FAQ
 

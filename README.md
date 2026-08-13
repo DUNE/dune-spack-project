@@ -50,6 +50,14 @@ board (org-wide GitHub Project), aggregating issues from `dune-spack-config`,
 `FNALssi/spack-mpd`. Views: **DUNE+FNALssi** (table, everything), **DUNE
 Repos** (table, DUNE-org only), **DUNE Kanban** (board, grouped by status).
 
+To report a problem: open the issue in whichever of those five repos it
+belongs to (not this repo — it isn't one of the tracked ones), then confirm
+it landed on the board. If it doesn't show up within a minute or two, add it
+yourself via the issue's **Projects** sidebar panel, or
+`gh issue edit <issue-url> --add-project "DUNE Spack & MPD Issues"`. See the
+site's [Issues section](https://dune.github.io/dune-spack-project/#issues)
+for the full walkthrough.
+
 ## Status
 
 Initial skeleton, live and building on every push to `main`. Content is a
