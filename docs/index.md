@@ -21,6 +21,7 @@ config and package repos.
 |---|---|
 | [DUNE Spack & MPD Issues](https://github.com/orgs/DUNE/projects/37) | Reporting a problem or checking what's already known |
 | [DUNE Spack Cheat-Sheet](https://dune.github.io/FAQ/Spack) | Everyday Spack commands |
+| [DUNE Computing Basics setup guide](https://dune.github.io/computing-basics/setup.html) | CVMFS entry point and the `dune-prototype` environment |
 
 ## Get started
 
