@@ -6,6 +6,7 @@ site_url = "https://dune.github.io/dune-spack-project/"
 nav = [
   { "Home" = "index.md" },
   { "Repositories" = "repositories.md" },
+  { "Configuration reference" = "configuration-reference.md" },
   { "Contributing" = "contributing.md" },
 ]
 

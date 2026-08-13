@@ -14,7 +14,8 @@ Core Spack configuration: `config.yaml` (general Spack settings),
 `packages.yaml` (external/preferred packages), `repos.yaml` (which package
 repositories Spack should pull recipes from). This is the base layer
 everything else builds on — start here to see what Spack itself is
-configured to know about.
+configured to know about. See the [Configuration
+reference](configuration-reference.md) for what each file actually pins.
 
 ### [`dune-spack-envs`](https://github.com/DUNE/dune-spack-envs)
 Spack **environment** definitions — the actual sets of packages installed
@@ -44,6 +45,14 @@ maintained by Fermilab Scientific Software Infrastructure (SSI) — this is
 the Spack core DUNE actually runs. See [Upstream Spack and the Fermilab
 fork](index.md#upstream-spack-and-the-fermilab-fork) on the home page for
 how it relates to `spack/spack`.
+
+### [`FNALssi/spack-packages`](https://github.com/FNALssi/spack-packages)
+A fork of Spack's own community package-recipe repository — distinct from
+`FNALssi/spack` above (that's the Spack *core*; this is the general package
+recipes). Pinned as the `builtin` entry in `dune-spack-config`'s
+`repos.yaml` (branch `fnal-v2025.11`), so this is where most non-DUNE
+package recipes actually come from. See the [Configuration
+reference](configuration-reference.md) for the full `repos.yaml` pin list.
 
 ### [`FNALssi/spack-at-fnal`](https://github.com/FNALssi/spack-at-fnal)
 Documentation describing Spack use at Fermilab generally (not DUNE-specific)
