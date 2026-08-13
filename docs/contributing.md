@@ -4,23 +4,62 @@ title: Contributing
 
 # Contributing
 
-This site is built from plain Markdown and welcomes edits and additions —
-fixing an out-of-date link, adding a missing tutorial, or writing up a new
-training topic are all in scope.
+This site is built with [Zensical](https://github.com/zensical/zensical)
+from plain Markdown in `docs/`. Editing a page or adding a new one doesn't
+require anything beyond a text editor and (optionally) a local preview.
 
-## Editing a page
+## Getting set up
 
-1. Edit the relevant Markdown file in the repository's `docs/` directory.
-2. Open a pull request against [`DUNE/dune-spack-project`](https://github.com/DUNE/dune-spack-project).
-3. Once merged, the change publishes to this site automatically — no manual
-   build or deploy step required.
+Install [`uv`](https://docs.astral.sh/uv/) (no Python needed first):
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Clone the repo — if you have write access to the DUNE org:
+
+```bash
+git clone git@github.com:DUNE/dune-spack-project.git
+cd dune-spack-project
+```
+
+Otherwise, [fork the repo](https://github.com/DUNE/dune-spack-project/fork)
+first, then clone your fork instead and open pull requests from it against
+`DUNE/dune-spack-project`.
+
+Install dependencies:
+
+```bash
+uv sync --locked
+```
+
+## Editing an existing page
+
+Edit the relevant file under `docs/` — `index.md`, `repositories.md`,
+`configuration-reference.md`, or `contributing.md` (this page). Preview
+locally with live reload:
+
+```bash
+uv run --locked zensical serve
+```
+
+Serves at `http://127.0.0.1:8000`. Commit, push, and open a pull request
+against `main`. `.github/workflows/docs.yml` builds and deploys the site
+automatically once it merges — no manual publish step.
 
 ## Adding a new page
 
-Add a new Markdown file under `docs/` and list it in the site navigation
-(`zensical.toml`). See the repository's [`CONTRIBUTING.md`](https://github.com/DUNE/dune-spack-project/blob/main/CONTRIBUTING.md)
-for the full walkthrough, including how to preview changes locally before
-opening a pull request.
+Add a new `.md` file under `docs/`, then add it to the `nav` list in
+`zensical.toml` so it appears in the site navigation:
+
+```toml
+nav = [
+  { "Home" = "index.md" },
+  { "Your Page Title" = "your-page.md" },
+]
+```
+
+Preview, commit, push, and open a pull request as above.
 
 ## Reporting a problem instead
 

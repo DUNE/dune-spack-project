@@ -6,9 +6,14 @@ anything beyond a text editor and (optionally) a local preview.
 
 ## Getting set up
 
-1. **Install `uv`** if you don't have it — see the
-   [official install instructions](https://docs.astral.sh/uv/getting-started/installation/)
-   (a single script, no Python needed first).
+1. **Install `uv`** if you don't have it (no Python needed first):
+
+   ```bash
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+
+   See the [official install instructions](https://docs.astral.sh/uv/getting-started/installation/)
+   for other platforms/methods (Homebrew, pipx, winget, ...).
 2. **Clone the repo:**
 
    - If you have write access to the DUNE org:
