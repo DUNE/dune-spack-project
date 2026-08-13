@@ -32,6 +32,8 @@ If you'd rather use a standard in-repo `.venv/`, drop the
 `zensical serve` builds and serves locally — no GitHub Pages / Actions
 configuration is needed for local testing.
 
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for how to edit or add pages.
+
 ## Deployment
 
 `.github/workflows/docs.yml` builds and publishes the site to GitHub Pages

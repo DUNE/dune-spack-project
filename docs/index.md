@@ -22,6 +22,7 @@ config and package repos.
 - **Develop or package DUNE software with Spack** — see the [DUNE Spack repositories](#dune-spack-repositories) below and the [upstream Spack and the Fermilab fork](#upstream-spack-and-the-fermilab-fork) section for where things live.
 - **Learn Spack** — see [Spack tutorials](#spack-tutorials).
 - **Report a problem or request documentation** — see [Issues](#issues).
+- **Edit this site or add a page** — see [Contributing](contributing.md).
 
 ## DUNE Spack repositories
 

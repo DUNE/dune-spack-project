@@ -5,6 +5,7 @@ site_url = "https://dune.github.io/dune-spack-project/"
 
 nav = [
   { "Home" = "index.md" },
+  { "Contributing" = "contributing.md" },
 ]
 
 extra_css = ["stylesheets/extra.css"]
