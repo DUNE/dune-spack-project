@@ -61,5 +61,10 @@ does and how it relates to the old `mrb` workflow.
 
 ## Issues
 
-All of the above feed the [DUNE Spack & MPD Issues](https://github.com/orgs/DUNE/projects/37)
-board — see [Issues](index.md#issues) on the home page.
+The four DUNE-maintained repos above, plus `FNALssi/spack-mpd`, feed the
+[DUNE Spack & MPD Issues](https://github.com/orgs/DUNE/projects/37) board —
+see [Issues](index.md#issues) on the home page. The other three
+Fermilab-maintained repos don't: `FNALssi/spack` has issues disabled
+entirely (report upstream to [spack/spack](https://github.com/spack/spack)
+instead), and `spack-at-fnal`/`fermi-spack-tools` aren't currently tracked
+on the board.
