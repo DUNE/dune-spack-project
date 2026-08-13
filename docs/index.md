@@ -69,10 +69,18 @@ Tracking DUNE's transition to newer Spack releases (Spack 1.0/1.1):
 
 ## Issues
 
-Not yet decided where DUNE Spack and MPD dev/use issues should be filed — new
-`dune-spack-project` Issues once this repo exists on GitHub, or one of the
-existing spack repos (`dune-spack-config`, `dune_spack`). This section will
-point to the chosen location once settled.
+Open issues across the DUNE Spack repos and MPD are tracked together on the
+[DUNE Spack & MPD Issues](https://github.com/orgs/DUNE/projects/37) board,
+which pulls in issues from `dune-spack-config`, `dune-spack-envs`,
+`dune_spack`, `dune-release-configs`, and `FNALssi/spack-mpd`. It has three
+views:
+
+- **DUNE+FNALssi** — table view, everything in one list
+- **DUNE Repos** — table view, DUNE-org repos only
+- **DUNE Kanban** — board view, grouped by status
+
+To report a problem, open an issue in the relevant repo above and it will
+show up on the board.
 
 ## FAQ
 

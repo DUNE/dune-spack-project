@@ -44,10 +44,18 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for how to edit or add pages.
 on every push to `main`. It won't run until this repo is pushed to GitHub
 with Pages enabled.
 
+## Issues
+
+Tracked on the [DUNE Spack & MPD Issues](https://github.com/orgs/DUNE/projects/37)
+board (org-wide GitHub Project), aggregating issues from `dune-spack-config`,
+`dune-spack-envs`, `dune_spack`, `dune-release-configs`, and
+`FNALssi/spack-mpd`. Views: **DUNE+FNALssi** (table, everything), **DUNE
+Repos** (table, DUNE-org only), **DUNE Kanban** (board, grouped by status).
+
 ## Status
 
 Initial skeleton only, built and reviewed locally. Not yet pushed to GitHub,
-so the site link above isn't live yet.
+so the site link above isn't live yet. The issues board above is already live.
 
 ## License
 
