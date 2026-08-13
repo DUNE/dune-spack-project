@@ -1,7 +1,6 @@
 # DUNE Spack Project
 
 **Site:** [dune.github.io/dune-spack-project](https://dune.github.io/dune-spack-project/)
-(not live yet — see [Status](#status))
 
 Documentation, training material, issue tracking, and project coordination for
 Spack and MPD (multi-package development, the `mrb` successor, built as a
@@ -41,8 +40,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for how to edit or add pages.
 
 `.github/workflows/docs.yml` builds and publishes the site to
 [dune.github.io/dune-spack-project](https://dune.github.io/dune-spack-project/)
-on every push to `main`. It won't run until this repo is pushed to GitHub
-with Pages enabled.
+on every push to `main`.
 
 ## Issues
 
@@ -54,8 +52,8 @@ Repos** (table, DUNE-org only), **DUNE Kanban** (board, grouped by status).
 
 ## Status
 
-Initial skeleton only, built and reviewed locally. Not yet pushed to GitHub,
-so the site link above isn't live yet. The issues board above is already live.
+Initial skeleton, live and building on every push to `main`. Content is a
+starting set, not exhaustive.
 
 ## License
 
