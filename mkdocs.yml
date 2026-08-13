@@ -1,5 +1,6 @@
 site_name: DUNE Spack Project
 site_description: Documentation, training, and issue tracking for DUNE Spack development and use
+site_url: https://dune.github.io/dune-spack-project/
 docs_dir: docs
 
 theme:
