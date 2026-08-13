@@ -30,9 +30,13 @@ If you'd rather use a standard in-repo `.venv/`, drop the
 `UV_PROJECT_ENVIRONMENT` overrides and run `uv sync --locked` directly.
 
 `zensical serve` builds and serves locally — no GitHub Pages / Actions
-configuration is needed for local testing. A `.github/workflows/` deploy
-step (building `site/` and publishing to GitHub Pages) is a later addition,
-once this is ready to actually go live under the DUNE org.
+configuration is needed for local testing.
+
+## Deployment
+
+`.github/workflows/docs.yml` builds and publishes the site to GitHub Pages
+on every push to `main`. It won't run until this repo is pushed to GitHub
+with Pages enabled.
 
 ## Status
 
