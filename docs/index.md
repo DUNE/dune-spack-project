@@ -19,7 +19,7 @@ config and package repos.
 
 - **Use the DUNE software stack** — start with the [DUNE Spack Cheat-Sheet](https://dune.github.io/FAQ/Spack) for everyday commands, then the [DUNE Computing Basics setup guide](https://dune.github.io/computing-basics/setup.html) for the CVMFS entry point and `dune-prototype` environment.
 - **Develop across multiple DUNE packages** — see [MPD (multi-package development)](#mpd-multi-package-development) below; MPD is the `mrb`-successor workflow for checking out and building several related repos together.
-- **Develop or package DUNE software with Spack** — see the [DUNE Spack repositories](#dune-spack-repositories) below and the [upstream Spack and the Fermilab fork](#upstream-spack-and-the-fermilab-fork) section for where things live.
+- **Develop or package DUNE software with Spack** — see the [DUNE Spack repositories](#dune-spack-repositories) below, the [Repositories](repositories.md) page for what each one contains, and [upstream Spack and the Fermilab fork](#upstream-spack-and-the-fermilab-fork) for where things live.
 - **Learn Spack** — see [Spack tutorials](#spack-tutorials).
 - **Report a problem or request documentation** — see [Issues](#issues).
 - **Edit this site or add a page** — see [Contributing](contributing.md).
@@ -32,6 +32,9 @@ config and package repos.
 | [`dune-spack-envs`](https://github.com/DUNE/dune-spack-envs) | Environment configurations for DUNE spack |
 | [`dune_spack`](https://github.com/DUNE/dune_spack) | The DUNE-specific Spack package repository |
 | [`dune-release-configs`](https://github.com/DUNE/dune-release-configs) | Spack configuration files for DUNE releases |
+
+See [Repositories](repositories.md) for what each one actually contains and
+how they relate to each other, plus the Fermilab-maintained repos below.
 
 ## MPD (multi-package development)
 
