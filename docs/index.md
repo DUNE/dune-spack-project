@@ -5,8 +5,10 @@ title: Home
 # DUNE Spack Project
 
 Documentation, training material, issue tracking, and project coordination for
-Spack development and use across DUNE — the docs/training/issues hub that was
-missing alongside the existing spack config and package repos.
+Spack development and use across DUNE — including **MPD** (multi-package
+development, the `mrb`/`mrb gitCheckout` successor built as a Spack extension) —
+the docs/training/issues hub that was missing alongside the existing spack
+config and package repos.
 
 !!! info "Proof of principle"
     This site is an initial skeleton, built to validate the local Zensical build
@@ -16,7 +18,8 @@ missing alongside the existing spack config and package repos.
 ## Get started
 
 - **Use the DUNE software stack** — start with the [DUNE Spack Cheat-Sheet](https://dune.github.io/FAQ/Spack) for everyday commands, then the [DUNE Computing Basics setup guide](https://dune.github.io/computing-basics/setup.html) for the CVMFS entry point and `dune-prototype` environment.
-- **Develop or package DUNE software** — see the [DUNE Spack repositories](#dune-spack-repositories) below and the [Fermilab upstream and DUNE deployment](#fermilab-upstream-and-dune-deployment) section for where things live.
+- **Develop across multiple DUNE packages** — see [MPD (multi-package development)](#mpd-multi-package-development) below; MPD is the `mrb`-successor workflow for checking out and building several related repos together.
+- **Develop or package DUNE software with Spack** — see the [DUNE Spack repositories](#dune-spack-repositories) below and the [Fermilab upstream and DUNE deployment](#fermilab-upstream-and-dune-deployment) section for where things live.
 - **Learn Spack** — see [Spack tutorials](#spack-tutorials).
 - **Report a problem or request documentation** — see [Issues](#issues).
 
@@ -29,6 +32,16 @@ missing alongside the existing spack config and package repos.
 | [`dune_spack`](https://github.com/DUNE/dune_spack) | The DUNE-specific Spack package repository |
 | [`dune-release-configs`](https://github.com/DUNE/dune-release-configs) | Spack configuration files for DUNE releases |
 
+## MPD (multi-package development)
+
+MPD is the `mrb`/`mrb gitCheckout` successor: a Spack extension for cloning,
+building, and iterating on several related DUNE/LArSoft packages together
+(`spack mpd init`, `spack mpd git-clone`, `spack mpd build`, ...).
+
+- [FNALssi/spack-mpd](https://github.com/FNALssi/spack-mpd) — source repository and `doc/` (Initialization, Creation, Building, Selection, Removing, Zapping)
+- [Developing LArSoft with Spack](https://larsoft.github.io/LArSoftWiki/Developing_LArSoft_with_Spack) — LArSoftWiki getting-started page combining Spack and MPD workflows
+- Kyle Knoepfel, "Multi-package development at Fermilab with Spack," CHEP 2024/2025 proceedings (FERMILAB-CONF-25-0228-CSAID) — design rationale for MPD's two-layer split (Spack resolves dependencies, MPD drives CMake/CTest for packages under active development)
+
 ## Fermilab upstream and DUNE deployment
 
 Spack 1.x splits core from package recipes, so no single link is "the DUNE Spack instance" — these together describe where DUNE's deployment comes from:
@@ -36,7 +49,7 @@ Spack 1.x splits core from package recipes, so no single link is "the DUNE Spack
 - [FNALssi/spack](https://github.com/FNALssi/spack) — the Fermilab fork/source of Spack core that DUNE builds on
 - [FNALssi/spack-at-fnal](https://github.com/FNALssi/spack-at-fnal) — Fermilab usage documentation
 - [FNALssi/fermi-spack-tools](https://github.com/FNALssi/fermi-spack-tools) — tools for managing Fermilab Spack instances
-- [DUNE Computing Basics setup guide](https://dune.github.io/computing-basics/setup.html) — the DUNE-specific CVMFS entry point and `dune-prototype` environment
+- [DUNE Computing Basics setup guide](https://dune.github.io/computing-basics/setup.html) — the DUNE-specific CVMFS entry point and `dune-prototype` environment, with OS-specific variants for [SL7](https://dune.github.io/computing-basics/sl7_setup) and [AL9](https://dune.github.io/computing-basics/setup#AL9_setup)
 
 ## Spack tutorials
 
@@ -56,7 +69,10 @@ Tracking DUNE's transition to newer Spack releases (Spack 1.0/1.1):
 
 ## Issues
 
-Not yet decided where DUNE Spack dev/use issues should be filed — new `dune-spack-project` Issues once this repo exists on GitHub, or one of the existing spack repos (`dune-spack-config`, `dune_spack`). This section will point to the chosen location once settled.
+Not yet decided where DUNE Spack and MPD dev/use issues should be filed — new
+`dune-spack-project` Issues once this repo exists on GitHub, or one of the
+existing spack repos (`dune-spack-config`, `dune_spack`). This section will
+point to the chosen location once settled.
 
 ## FAQ
 
