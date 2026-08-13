@@ -19,7 +19,7 @@ config and package repos.
 
 - **Use the DUNE software stack** — start with the [DUNE Spack Cheat-Sheet](https://dune.github.io/FAQ/Spack) for everyday commands, then the [DUNE Computing Basics setup guide](https://dune.github.io/computing-basics/setup.html) for the CVMFS entry point and `dune-prototype` environment.
 - **Develop across multiple DUNE packages** — see [MPD (multi-package development)](#mpd-multi-package-development) below; MPD is the `mrb`-successor workflow for checking out and building several related repos together.
-- **Develop or package DUNE software with Spack** — see the [DUNE Spack repositories](#dune-spack-repositories) below and the [Fermilab upstream and DUNE deployment](#fermilab-upstream-and-dune-deployment) section for where things live.
+- **Develop or package DUNE software with Spack** — see the [DUNE Spack repositories](#dune-spack-repositories) below and the [upstream Spack and the Fermilab fork](#upstream-spack-and-the-fermilab-fork) section for where things live.
 - **Learn Spack** — see [Spack tutorials](#spack-tutorials).
 - **Report a problem or request documentation** — see [Issues](#issues).
 
@@ -42,13 +42,12 @@ building, and iterating on several related DUNE/LArSoft packages together
 - [Developing LArSoft with Spack](https://larsoft.github.io/LArSoftWiki/Developing_LArSoft_with_Spack) — LArSoftWiki getting-started page combining Spack and MPD workflows
 - Kyle Knoepfel, "Multi-package development at Fermilab with Spack," CHEP 2024/2025 proceedings (FERMILAB-CONF-25-0228-CSAID) — design rationale for MPD's two-layer split (Spack resolves dependencies, MPD drives CMake/CTest for packages under active development)
 
-## Fermilab upstream and DUNE deployment
+## Upstream Spack and the Fermilab fork
 
 Spack 1.x splits core from package recipes, so no single link is "the DUNE Spack instance" — these together describe where DUNE's deployment comes from:
 
-- [FNALssi/spack](https://github.com/FNALssi/spack) — the Fermilab fork/source of Spack core that DUNE builds on
-- [FNALssi/spack-at-fnal](https://github.com/FNALssi/spack-at-fnal) — Fermilab usage documentation
-- [FNALssi/fermi-spack-tools](https://github.com/FNALssi/fermi-spack-tools) — tools for managing Fermilab Spack instances
+- **Upstream Spack**: [spack/spack](https://github.com/spack/spack) is the project itself; its full reference documentation is hosted on Read the Docs at [spack.readthedocs.io](https://spack.readthedocs.io/).
+- **Fermilab fork**: [FNALssi/spack](https://github.com/FNALssi/spack) is a fork of upstream Spack that DUNE builds on, maintained by Fermilab Scientific Software Infrastructure (SSI). See also [FNALssi/spack-at-fnal](https://github.com/FNALssi/spack-at-fnal) (Fermilab usage documentation) and [FNALssi/fermi-spack-tools](https://github.com/FNALssi/fermi-spack-tools) (tools for managing Fermilab Spack instances).
 - [DUNE Computing Basics setup guide](https://dune.github.io/computing-basics/setup.html) — the DUNE-specific CVMFS entry point and `dune-prototype` environment, with OS-specific variants for [SL7](https://dune.github.io/computing-basics/sl7_setup) and [AL9](https://dune.github.io/computing-basics/setup#AL9_setup)
 
 ## Spack tutorials
@@ -82,5 +81,4 @@ Spack-adjacent questions not yet covered here).
 
 ## Related
 
-- [Official Spack documentation](https://spack.readthedocs.io/) — upstream reference for Spack itself, not DUNE-specific
 - [`dune-ghpandp-doc`](https://github.com/DUNE/dune-ghpandp-doc) — DUNE Collaboration GitHub Organization Policy and Procedures
