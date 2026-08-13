@@ -1,0 +1,40 @@
+[project]
+site_name = "DUNE Spack Project"
+site_description = "Documentation, training, and issue tracking for DUNE Spack and MPD development and use"
+site_url = "https://dune.github.io/dune-spack-project/"
+
+nav = [
+  { "Home" = "index.md" },
+]
+
+extra_css = ["stylesheets/extra.css"]
+
+[project.theme]
+features = [
+  "navigation.sections",
+  "navigation.top",
+  "navigation.footer",
+  "navigation.indexes",
+  "search.suggest",
+  "search.highlight",
+  "content.code.copy",
+  "toc.follow",
+]
+
+[project.markdown_extensions]
+tables = {}
+footnotes = {}
+attr_list = {}
+md_in_html = {}
+admonition = {}
+toc = {
+  permalink = true
+}
+pymdownx.details = {}
+pymdownx.superfences = {}
+pymdownx.highlight = {
+  anchor_linenums = true
+}
+pymdownx.tasklist = {
+  custom_checkbox = true
+}
