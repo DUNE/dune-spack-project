@@ -51,11 +51,14 @@ board (org-wide GitHub Project), aggregating issues from `dune-spack-config`,
 Repos** (table, DUNE-org only), **DUNE Kanban** (board, grouped by status).
 
 To report a problem: open the issue in whichever of those five repos it
-belongs to (not this repo — it isn't one of the tracked ones), then confirm
-it landed on the board. If it doesn't show up within a minute or two, add it
-yourself via the issue's **Projects** sidebar panel, or
-`gh issue edit <issue-url> --add-project "DUNE Spack & MPD Issues"`. See the
-site's [Issues section](https://dune.github.io/dune-spack-project/#issues)
+belongs to, or in this repo if the right one isn't obvious (Issues are
+enabled here too). Then confirm it landed on the board — if it doesn't show
+up within a minute or two, add it yourself via the issue's **Projects**
+sidebar panel, or `gh issue edit <issue-url> --add-project "DUNE Spack & MPD Issues"`.
+You can also add a draft item directly on the board with no issue behind it,
+but that's better for quick capture than for anything you want tracked
+properly (comments, labels, PR links) — prefer a real issue when you can.
+See the site's [Issues section](https://dune.github.io/dune-spack-project/#issues)
 for the full walkthrough.
 
 ## Status
