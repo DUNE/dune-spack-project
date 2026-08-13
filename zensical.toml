@@ -13,6 +13,8 @@ nav = [
 extra_css = ["stylesheets/extra.css"]
 
 [project.theme]
+logo = "images/dune-logo.jpeg"
+favicon = "images/favicon.ico"
 features = [
   "navigation.sections",
   "navigation.top",
@@ -23,6 +25,16 @@ features = [
   "content.code.copy",
   "toc.follow",
 ]
+
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
 
 [project.markdown_extensions]
 tables = {}
