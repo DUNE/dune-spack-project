@@ -1,10 +1,13 @@
 # DUNE Spack Project
 
+**Site:** [dune.github.io/dune-spack-project](https://dune.github.io/dune-spack-project/)
+(not live yet — see [Status](#status))
+
 Documentation, training material, issue tracking, and project coordination for
 Spack and MPD (multi-package development, the `mrb` successor, built as a
 Spack extension) development and use across DUNE. Built with
 [Zensical](https://github.com/zensical/zensical), rendered as a static site
-(intended to be published to `dune.github.io/dune-spack-project` once ready).
+and published to GitHub Pages via `.github/workflows/docs.yml`.
 
 This is a proof-of-principle skeleton, not the finished site — scoped
 narrowly to validate the build/deploy pipeline first. MPD is covered here
@@ -36,13 +39,15 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for how to edit or add pages.
 
 ## Deployment
 
-`.github/workflows/docs.yml` builds and publishes the site to GitHub Pages
+`.github/workflows/docs.yml` builds and publishes the site to
+[dune.github.io/dune-spack-project](https://dune.github.io/dune-spack-project/)
 on every push to `main`. It won't run until this repo is pushed to GitHub
 with Pages enabled.
 
 ## Status
 
-Initial skeleton only, built and reviewed locally. Not yet pushed to GitHub.
+Initial skeleton only, built and reviewed locally. Not yet pushed to GitHub,
+so the site link above isn't live yet.
 
 ## License
 
