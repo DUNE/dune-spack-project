@@ -15,6 +15,16 @@ config and package repos.
     before committing to the full scope and a GitHub Pages deploy. Content below
     is a starting set, not exhaustive.
 
+## Quick links
+
+| Link | For |
+|---|---|
+| [DUNE Spack & MPD Issues](https://github.com/orgs/DUNE/projects/37) | Reporting a problem or checking what's already known |
+| [DUNE Spack Cheat-Sheet](https://dune.github.io/FAQ/Spack) | Everyday Spack commands |
+| [Repositories](repositories.md) | What each Spack-related repo actually contains |
+| [Configuration reference](configuration-reference.md) | What each YAML config file pins/controls |
+| [Contributing](contributing.md) | Editing or adding a page on this site |
+
 ## Get started
 
 - **Use the DUNE software stack** — start with the [DUNE Spack Cheat-Sheet](https://dune.github.io/FAQ/Spack) for everyday commands, then the [DUNE Computing Basics setup guide](https://dune.github.io/computing-basics/setup.html) for the CVMFS entry point and `dune-prototype` environment.
