@@ -2,6 +2,8 @@
 site_name = "DUNE Spack Project"
 site_description = "Documentation, training, and issue tracking for DUNE Spack and MPD development and use"
 site_url = "https://dune.github.io/dune-spack-project/"
+repo_url = "https://github.com/DUNE/dune-spack-project"
+repo_name = "DUNE/dune-spack-project"
 
 nav = [
   { "Home" = "index.md" },
@@ -25,6 +27,9 @@ features = [
   "content.code.copy",
   "toc.follow",
 ]
+
+[project.theme.icon]
+repo = "fontawesome/brands/github"
 
 [[project.theme.palette]]
 scheme = "default"
