@@ -45,6 +45,8 @@ standalone.
 | `sbn` | [`gartung/sbn-spack`](https://github.com/gartung/sbn-spack) | `spack-v1.0` |
 | `scd` | [`fnal-fife/scd_recipes`](https://github.com/fnal-fife/scd_recipes) | `master` |
 
+For what DUNE builds on top of the `phlex` recipes, see the companion [DUNE Phlex Project](https://dune.github.io/dune-phlex-project/) site.
+
 ## `dune-spack-envs`
 
 Two Spack **environment** manifests (`spack.yaml`), each installable on its
