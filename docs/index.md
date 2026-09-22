@@ -10,11 +10,6 @@ development, the `mrb`/`mrb gitCheckout` successor built as a Spack extension) â
 the docs/training/issues hub that was missing alongside the existing spack
 config and package repos.
 
-!!! info "Proof of principle"
-    This site is an initial skeleton, built to validate the local Zensical build
-    before committing to the full scope and a GitHub Pages deploy. Content below
-    is a starting set, not exhaustive.
-
 ## Quick links
 
 | Link | For |
