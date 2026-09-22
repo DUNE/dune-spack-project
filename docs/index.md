@@ -22,6 +22,7 @@ config and package repos.
 
 - **Use the DUNE software stack** — start with the [DUNE Spack Cheat-Sheet](https://dune.github.io/FAQ/Spack) for everyday commands, then the [DUNE Computing Basics setup guide](https://dune.github.io/computing-basics/setup.html) for the CVMFS entry point and `dune-prototype` environment.
 - **Develop across multiple DUNE packages** — see [MPD (multi-package development)](#mpd-multi-package-development) below; MPD is the `mrb`-successor workflow for checking out and building several related repos together.
+- **Build a DUNE package with MPD on AL9** — follow the [MPD on AL9 runbook](mpd-al9-runbook.md), a tested start-to-finish path with a troubleshooting table.
 - **Develop or package DUNE software with Spack** — see the [DUNE Spack repositories](#dune-spack-repositories) below, the [Repositories](repositories.md) page for what each one contains, and [upstream Spack and the Fermilab fork](#upstream-spack-and-the-fermilab-fork) for where things live.
 - **Learn Spack** — see [Spack tutorials](#spack-tutorials).
 - **Report a problem or request documentation** — see [Issues](#issues).
@@ -45,6 +46,7 @@ MPD is the `mrb`/`mrb gitCheckout` successor: a Spack extension for cloning,
 building, and iterating on several related DUNE/LArSoft packages together
 (`spack mpd init`, `spack mpd git-clone`, `spack mpd build`, ...).
 
+- [MPD on AL9 runbook](mpd-al9-runbook.md) — step-by-step build of a DUNE package against a CVMFS release, with fixes for the common failures
 - [FNALssi/spack-mpd](https://github.com/FNALssi/spack-mpd) — source repository and `doc/` (Initialization, Creation, Building, Selection, Removing, Zapping)
 - [Developing LArSoft with Spack](https://larsoft.github.io/LArSoftWiki/Developing_LArSoft_with_Spack) — LArSoftWiki getting-started page combining Spack and MPD workflows
 - Kyle Knoepfel, "Multi-package development at Fermilab with Spack," CHEP 2024/2025 proceedings (FERMILAB-CONF-25-0228-CSAID) — design rationale for MPD's two-layer split (Spack resolves dependencies, MPD drives CMake/CTest for packages under active development)

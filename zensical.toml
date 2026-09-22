@@ -8,6 +8,7 @@ repo_name = "DUNE/dune-spack-project"
 nav = [
   { "Home" = "index.md" },
   { "Repositories" = "repositories.md" },
+  { "MPD on AL9 runbook" = "mpd-al9-runbook.md" },
   { "Configuration reference" = "configuration-reference.md" },
   { "Contributing" = "contributing.md" },
 ]
