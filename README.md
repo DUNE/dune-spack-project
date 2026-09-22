@@ -8,9 +8,8 @@ Spack extension) development and use across DUNE. Built with
 [Zensical](https://github.com/zensical/zensical), rendered as a static site
 and published to GitHub Pages via `.github/workflows/docs.yml`.
 
-This is a proof-of-principle skeleton, not the finished site — scoped
-narrowly to validate the build/deploy pipeline first. MPD is covered here
-rather than in a separate repo since it is itself a Spack extension.
+MPD is covered here rather than in a separate repo since it is itself a
+Spack extension.
 
 ## Local development
 
@@ -63,8 +62,7 @@ for the full walkthrough.
 
 ## Status
 
-Initial skeleton, live and building on every push to `main`. Content is a
-starting set, not exhaustive.
+Live and building on every push to `main`, with a build check on every PR.
 
 ## Copyright and Licensing
 Copyright © 2026 FERMI NATIONAL ACCELERATOR LABORATORY for the benefit of the DUNE Collaboration.
