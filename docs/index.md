@@ -124,4 +124,5 @@ Spack-adjacent questions not yet covered here).
 
 ## Related
 
+- [DUNE Phlex Project](https://dune.github.io/dune-phlex-project/): the companion site for DUNE's migration from `art` to the Phlex framework, built with the `phlex` Spack recipes listed on the [Configuration reference](configuration-reference.md)
 - [`dune-ghpandp-doc`](https://github.com/DUNE/dune-ghpandp-doc) — DUNE Collaboration GitHub Organization Policy and Procedures

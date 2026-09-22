@@ -2,6 +2,8 @@
 
 **Site:** [dune.github.io/dune-spack-project](https://dune.github.io/dune-spack-project/)
 
+**Companion site:** [DUNE Phlex Project](https://dune.github.io/dune-phlex-project/) ([repo](https://github.com/DUNE/dune-phlex-project)), for DUNE's migration to the Phlex framework.
+
 Documentation, training material, issue tracking, and project coordination for
 Spack and MPD (multi-package development, the `mrb` successor, built as a
 Spack extension) development and use across DUNE. Built with
