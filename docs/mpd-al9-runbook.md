@@ -140,6 +140,12 @@ cd "$INST"
     MPD's [Creation](https://github.com/FNALssi/spack-mpd/blob/main/doc/Creation.md)
     page explains what `-E` does.
 
+!!! tip "Which packages to check out"
+    `spack dependents --transient larexample` lists the full set of packages
+    that should be checked out and built with MPD for that target (thanks to
+    Patrick Gartung). Substitute your own top-level package for `larexample`,
+    and `spack mpd git-clone` the ones you need to modify.
+
 ### 5. Concretize, and read the log before answering
 
 ```bash
